@@ -1,0 +1,83 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>itung2an</title>
+ </head>
+ <style>
+     .itung2an {
+         margin: 200px 0px 0px 500px;
+         border: 7px double grey;
+         height: 250px;
+         width: 300px;
+         background-color: rgba(222, 184, 135, 0.733);
+     }
+ </style>
+ <body>
+     <div class="itung2an" >
+    <h2 style="padding-left: 75px; font-family: cursive;">Itung-itungan</h2>
+    <div style="display: flex; margin-left: 90px;">
+        <div class="content">
+            <input style="width: 50px;" type="number"
+            id="angkaPertama">
+        </div>
+        <div class="content">
+            <input style="width: 50px;" type="number"
+            id="angkaKedua">
+        </div>
+    </div>
+                <br>
+    <div style="display: flex; margin-left: 105px;">
+        <div class="content">
+            <button onclick="pertambahan()"> + </button>
+        </div>
+        <div class="content">
+            <button onclick="pengurangan()"> - </button>
+        </div>
+        <div class="content">
+            <button onclick="perkalian()"> x </button>
+        </div>
+        <div class="content">
+            <button onclick="pembagian()"> : </button>
+        </div>
+    </div>
+    <p style="padding-left: 130px; font-family: cursive;">hasil</p>
+    <p id="hasil" style="padding-left: 140px; font-size: 20px;"></p>
+    <script>
+        let angkaPertama, angkaKedua;
+
+function pertambahan() {
+  angkaPertama = document.getElementById("angkaPertama").value;
+  angkaKedua = document.getElementById("angkaKedua").value;
+  document.getElementById("hasil").innerHTML =
+    parseInt(angkaKedua) + parseInt(angkaPertama);
+}
+function pengurangan() {
+  angkaPertama = document.getElementById("angkaPertama").value;
+  angkaKedua = document.getElementById("angkaKedua").value;
+  document.getElementById("hasil").innerHTML =
+    parseInt(angkaKedua) - parseInt(angkaPertama);
+}
+function perkalian() {
+  angkaPertama = document.getElementById("angkaPertama").value;
+  angkaKedua = document.getElementById("angkaKedua").value;
+  document.getElementById("hasil").innerHTML =
+    parseInt(angkaKedua) * parseInt(angkaPertama);
+}
+function pembagian() {
+  angkaPertama = document.getElementById("angkaPertama").value;
+  angkaKedua = document.getElementById("angkaKedua").value;
+  document.getElementById("hasil").innerHTML =
+    parseInt(angkaKedua) / parseInt(angkaPertama);
+}
+
+
+
+    </script>
+    </div>
+ </body>
+ </html>
+
+
